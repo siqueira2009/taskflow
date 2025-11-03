@@ -7,8 +7,6 @@
   <br>
 </h1>
 
-<h2 align="center">Produtividade e facilidade máxima com Task<span style="color: #4950CB">Flow</span></h2>
-
 <!--![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)-->
 
 ## 🔗 | Acessar
