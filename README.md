@@ -9,12 +9,6 @@
 
 <h2 align="center">Produtividade e facilidade máxima com Task<span style="color: #4950CB">Flow</span></h2>
 
-<p align="center">
-  <a href="# 🔗 | Acessar">Acessar</a> •
-  <a href="# ⚒️ | Ferramentas">Ferramentas</a> •
-  <a href="# ⚒️ | Contribuintes">Contribuintes</a> 
-</p>
-
 <!--![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)-->
 
 ## 🔗 | Acessar
