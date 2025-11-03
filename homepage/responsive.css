@@ -1,0 +1,112 @@
+@media screen and (max-width: 260px) {
+    header, #heroSection {
+        display: none;
+    }
+
+    body {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 400px) {
+    #indisponivel {
+        display: none;
+    }
+
+    /* Header */
+
+    header img {
+        width: 50px;
+    }
+
+    /* Hero Section */
+
+    #titleContent {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #titleContent #title {
+        display: flex;
+        line-height: 70px;
+        flex-direction: column;
+    }
+
+    #heroSection #slogan {
+        font-size: 20px;
+    }
+
+    #heroBotoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    #indisponivel {
+        display: none;
+    }
+
+    /* Header */
+
+    header img {
+        width: 50px;
+    }
+
+    /* Hero Section */
+
+    #titleContent {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #titleContent #title {
+        display: flex;
+        line-height: 70px;
+        flex-direction: row;
+    }
+
+    #heroBotoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #heroSection #slogan {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    #indisponivel {
+        display: none;
+    }
+
+    .card {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #cards {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+    #indisponivel {
+        display: none;
+    }
+
+    #cards {
+        display: none;
+    }
+
+    #cardsResp {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #indisponivel {
+        display: none;
+    }
+}

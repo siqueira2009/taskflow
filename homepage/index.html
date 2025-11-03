@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="shortcut icon" href="../imgs/svgs/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="temaEscuro">
+
+    <div id="indisponivel">
+        <img draggable="false" src="../imgs/svgs/Logo.svg" alt="Logo Taskflow">
+        <p>Site <span>indisponível</span> para seu dispositivo</p>
+    </div>
+
+    <header>
+        <img draggable="false" src="../imgs/svgs/Logo.svg " alt="">
+        <div id="temaFundo">
+            <i style="color: #272727; display: none;" class="fa-solid fa-moon tema" id="temaClaro"></i>
+            <svg class="tema" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" id="temaEscuro"><path fill="#ffff" d="M256 107q-62 0-105.5 43.5T107 256t43.5 105.5T256 405t105.5-43.5T405 256t-43.5-105.5T256 107zm0 256q-45 0-76-31t-31-76t31-76t76-31t76 31t31 76t-31 76t-76 31zm21-299V21q0-21-21-21t-21 21v43q0 21 21 21t21-21zM85 256q0-21-21-21H21q-21 0-21 21t21 21h43q21 0 21-21zm406-21h-43q-21 0-21 21t21 21h43q21 0 21-21t-21-21zM256 427q-21 0-21 21v43q0 21 21 21t21-21v-43q0-21-21-21zm164-305l22-22q14-14 0-30q-16-14-30 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6zm-313 6q7 0 15-6q14-16 0-30l-22-22q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6zm313 262q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6q7 0 15-6q14-16 0-30zm-328 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6l22-22q14-14 0-30q-16-14-30 0z"/></svg>
+        </div>
+    </header>
+    
+    <div id="heroSection">
+        <div id="titleContent">
+            <img draggable="false" id="titleImg" src="../imgs/svgs/Logo.svg" alt="">
+            <h1 id="title">Task<span>Flow</span></h1>
+        </div>
+        <p id="slogan">Produtividade e facilidade máxima</p>
+        <div id="heroBotoes">
+            <a id="comecar" href=""><i class="fa-solid fa-user-plus"></i>Começar agora</a>
+            <a id="saberMais" href="#cards"><i class="fa-solid fa-arrow-down"></i>Saber mais</a>
+        </div>
+    </div>
+
+    <div id="cards">
+        <div class="card" id="pomodoro">
+            <h2><i class="fa-solid fa-stopwatch-20"></i>Pomodoro</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula  sit amet tortor in faucibus. Nunc sem felis, congue id efficitur  blandit, mattis in neque. Etiam gravida dictum elit in tristique. </p>
+        </div>
+
+        <div class="card" id="stats">
+            <h2><i class="fa-solid fa-chart-line"></i>Estatísticas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula  sit amet tortor in faucibus. Nunc sem felis, congue id efficitur  blandit, mattis in neque. Etiam gravida dictum elit in tristique. </p>
+        </div>
+
+        <div class="card" id="ia">
+            <h2><i class="fa-solid fa-robot"></i>IA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula  sit amet tortor in faucibus. Nunc sem felis, congue id efficitur  blandit, mattis in neque. Etiam gravida dictum elit in tristique. </p>
+        </div>
+    </div>
+
+    <div id="cardsResp">
+        <div class="card" id="pomodoro" style="display: flex; width: 80%;">
+            <h2><i class="fa-solid fa-stopwatch-20"></i>Pomodoro</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula  sit amet tortor in faucibus. Nunc sem felis, congue id efficitur  blandit, mattis in neque. Etiam gravida dictum elit in tristique. </p>
+        </div>
+
+        <div class="card" id="stats" style="display: none;">
+            <h2><i class="fa-solid fa-chart-line"></i>Estatísticas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula  sit amet tortor in faucibus. Nunc sem felis, congue id efficitur  blandit, mattis in neque. Etiam gravida dictum elit in tristique. </p>
+        </div>
+
+        <div class="card" id="ia" style="display: none;">
+            <h2><i class="fa-solid fa-robot"></i>IA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula  sit amet tortor in faucibus. Nunc sem felis, congue id efficitur  blandit, mattis in neque. Etiam gravida dictum elit in tristique. </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
