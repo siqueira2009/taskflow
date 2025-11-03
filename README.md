@@ -37,11 +37,6 @@ Você pode [acessar](https://siqueira2009.github.io/taskflow) o TaskFlow em qual
   <img src="https://contrib.rocks/image?repo=siqueira2009/taskflow" alt="contrib.rocks image" />
 </a>
 
-
----
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [html.js]: https://img.shields.io/badge/html-e54c21?style=for-the-badge&logo=html5&logoColor=white
