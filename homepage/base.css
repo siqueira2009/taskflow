@@ -248,7 +248,47 @@ body.temaClaro .card {
     margin: 0 auto;
     margin-top: 100px;
     display: none;
-    width: 90%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    user-select: none;
+}
+
+#cardsResp > .card {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.notFocused {
+    display: none;
+}
+
+.focused {
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+}
+
+#dotsResp {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+}
+
+#dotsResp div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px #555555 solid;
+    transition: background-color 0.7s;
+}
+
+#dotsResp div.posAtual {
+    border: none;
+    background-color: #4950CB;
 }
