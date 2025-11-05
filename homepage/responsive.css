@@ -46,7 +46,6 @@
     }
 
     #cardsResp {
-        margin-top: 50px;
         display: flex;
     }
 
@@ -136,6 +135,10 @@
 
 @media screen and (min-width: 1400px) {
     #indisponivel {
+        display: none;
+    }
+
+    #dotsResp {
         display: none;
     }
 }

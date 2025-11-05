@@ -246,7 +246,7 @@ body.temaClaro .card {
 
 #cardsResp {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     display: none;
     width: 100%;
     justify-content: space-between;

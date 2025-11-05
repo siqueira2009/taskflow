@@ -1,3 +1,5 @@
+// Função que roda quando carrega a página
+
 document.addEventListener('DOMContentLoaded', () => {
     let bodyChildren = document.querySelector('body').children;
 
@@ -17,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+
+// Tema escuro e claro
 
 let body = document.querySelector('body');
 let alterarTema = document.getElementById('temaFundo');
@@ -45,15 +49,15 @@ alterarTema.addEventListener('click', () => {
 // Cards responsivos
 
 let cardsContainer = document.getElementById('cardsResp');
-let cardsResponsivos = document.querySelectorAll('.cardResp');
+let cardsResponsivos = cardsContainer.children;
 let bolinhasContainer = document.getElementById('dotsResp');
 let bolinhas = bolinhasContainer.children;
 let cardAtual = 0;
-let cliques = 0;
+
+let intervalo;
+let intervaloTempo = 5000;
 
 function trocarCard(card) {
-    cardsContainer.children[0].style.opacity = '0';
-
     cardsResponsivos[card].classList.remove('focused');
     cardsResponsivos[card].classList.add('notFocused');
     cardsResponsivos[card].style.display = 'none';
@@ -66,14 +70,25 @@ function trocarCard(card) {
     cardsResponsivos[card].style.display = 'flex'
     cardsResponsivos[card].classList.add('focused');
     cardsResponsivos[card].classList.remove('notFocused');
-    bolinhas[card].classList.add('posAtual')
+    bolinhas[card].classList.add('posAtual');
+
+    cardAtual = card;
 }
 
 cardsContainer.addEventListener('click', () => {
     trocarCard(cardAtual);
-    if (cardAtual == 2) {
-        cardAtual = 0;
-    } else {
-        cardAtual++;
-    }
-})
+    clearInterval(intervalo);
+    intervalo = setInterval(() => trocarCard(cardAtual), intervaloTempo);
+});
+
+intervalo = setInterval(() => trocarCard(cardAtual), intervaloTempo);
+
+// Mudar 'href' dependendo do tamanho da tela
+
+let saberMaisBotao = document.getElementById('saberMais')
+
+if (screen.width < 1400) {
+    saberMaisBotao.setAttribute('href', '#cardsResp');
+} else {
+    saberMaisBotao.setAttribute('href', '#cards');
+}
