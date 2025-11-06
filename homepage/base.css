@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-style: normal;
+
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
 }
 
 html {
