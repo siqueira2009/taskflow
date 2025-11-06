@@ -19,6 +19,7 @@ html {
 
 body {
     padding-bottom: 50px;
+    height: auto;
 }
 
 body::after {
