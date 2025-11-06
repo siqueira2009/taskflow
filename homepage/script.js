@@ -60,7 +60,6 @@ let intervaloTempo = 5000;
 function trocarCard(card) {
     cardsResponsivos[card].classList.remove('focused');
     cardsResponsivos[card].classList.add('notFocused');
-    cardsResponsivos[card].style.display = 'none';
     bolinhas[card].classList.remove('posAtual')
     if (card == 2) {
         card = 0;

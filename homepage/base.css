@@ -217,8 +217,8 @@ body.temaClaro #heroBotoes #saberMais {
     gap: 10px;
     user-select: none;
     transition: scale 0.3s;
-    position: relative; /* <- importante! */
-    overflow: hidden; /* evita que #partes ultrapasse o card */
+    position: relative;
+    overflow: hidden;
     transition: all 0.3s;
 }
 
@@ -297,7 +297,7 @@ body.temaClaro .card {
     margin-top: 50px;
     display: none;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     gap: 10px;
     user-select: none;
@@ -305,15 +305,21 @@ body.temaClaro .card {
 
 #cardsResp > .card {
     cursor: pointer;
-    transition: opacity 0.3s;
     min-height: auto;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .notFocused {
-    display: none;
+    transform: scale(0.95);
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+    pointer-events: none;
 }
 
 .focused {
+    transform: scale(1);
+    opacity: 1;
     margin: 0 auto;
     display: flex;
     width: 85%;
