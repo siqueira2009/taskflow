@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href=""><img src="imgs/svgs/Logo.svg" alt="TaskFlow Logo" width="200"></a>
+  <a href=""><img src="imgs/SVGs/Logo.svg" alt="TaskFlow Logo" width="200"></a>
   <br>
   Task<span style="color: #4950CB">Flow</span>
   <br>
