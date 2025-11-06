@@ -65,14 +65,13 @@ body.temaEscuro #indisponivel > p {
     color: #FFF;
 }
 
-/* Header */
+/* Cabeçalho */
 
 header {
     width: 90%;
     height: 70px;
     margin: 0 auto;
     background-color: transparent;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -102,6 +101,10 @@ header #temaFundo {
 
 header #temaFundo:hover {
     background-color: rgba(128, 128, 128, 0.25);
+}
+
+header #temaFundo i {
+    color: #272727; 
 }
 
 /* Hero Section */
@@ -206,11 +209,56 @@ body.temaClaro #heroBotoes #saberMais {
 .card {
     width: 30%;
     height: auto;
+    min-height: 300px;
     border-radius: 12px;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    user-select: none;
+    transition: scale 0.3s;
+    position: relative; /* <- importante! */
+    overflow: hidden; /* evita que #partes ultrapasse o card */
+    transition: all 0.3s;
+}
+
+.card:has(.parte1:hover) {
+    transform: perspective(2000px) rotateX(10deg) rotateY(-10deg) scale(1.05);
+}
+
+.card:has(.parte2:hover) {
+    transform: perspective(2000px) rotateX(10deg) rotateY(10deg) scale(1.05);
+}
+
+.card:has(.parte3:hover) {
+    transform: perspective(2000px) rotateX(-10deg) rotateY(-10deg) scale(1.05);
+}
+
+.card:has(.parte4:hover) {
+    transform: perspective(2000px) rotateX(-10deg) rotateY(10deg) scale(1.05);
+}
+
+.partes {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.partes div {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.partesTop {
+    top: 0px;
+    right: 0px;
+}
+
+.partesBottom {
+    bottom: 0px;
+    right: 0px;
 }
 
 body.temaEscuro .card {
@@ -258,6 +306,7 @@ body.temaClaro .card {
 #cardsResp > .card {
     cursor: pointer;
     transition: opacity 0.3s;
+    min-height: auto;
 }
 
 .notFocused {

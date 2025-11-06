@@ -1,14 +1,19 @@
 @media screen and (max-width: 260px) {
-    header, #heroSection {
+    /* Remove todas os elementos */
+    header, #heroSection, #cardsResp, #cards, #dotsResp {
         display: none;
     }
 
+    /* Muda o estilo do body */
     body {
+        width: 100dvw;
+        height: 100dvh;
         display: block !important;
     }
 }
 
 @media screen and (min-width: 260px) and (max-width: 400px) {
+    /* Tira tela de indisponibilidade */
     #indisponivel {
         display: none;
     }
@@ -41,6 +46,8 @@
         gap: 20px;
     }
 
+    /* Cards */
+
     #cards {
         display: none;
     }
@@ -64,6 +71,7 @@
 }
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
+    /* Tira tela de indisponibilidade */
     #indisponivel {
         display: none;
     }
@@ -96,6 +104,8 @@
         font-size: 20px;
     }
 
+    /* Cards */
+
     #cards {
         display: none;
     }
@@ -106,9 +116,12 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
+    /* Tira tela de indisponibilidade */
     #indisponivel {
         display: none;
     }
+
+    /* Cards */
 
     #cards {
         display: none;
@@ -120,9 +133,12 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) {
+    /* Tira tela de indisponibilidade */
     #indisponivel {
         display: none;
     }
+
+    /* Cards */
 
     #cards {
         display: none;
@@ -134,10 +150,13 @@
 }
 
 @media screen and (min-width: 1400px) {
+    /* Tira tela de indisponibilidade */
     #indisponivel {
         display: none;
     }
 
+    /* Cards */
+    
     #dotsResp {
         display: none;
     }

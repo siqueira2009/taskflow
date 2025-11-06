@@ -1,14 +1,14 @@
 // Função que roda quando carrega a página
 
 document.addEventListener('DOMContentLoaded', () => {
-    let bodyChildren = document.querySelector('body').children;
+    let bodyChildren = document.querySelector('body').children; // Todos os filhos do body
 
-    Array.from(bodyChildren).forEach((el, index) => {
+    Array.from(bodyChildren).forEach((el, index) => { // Margin para animação de baixo
         el.style.opacity = '0'
         if (index == 1) {
             el.style.marginTop = '0px'
         } else {
-            el.style.marginTop = '100px'
+            el.style.marginTop = '1000px'
         }
         
         setTimeout(() => {
@@ -91,4 +91,4 @@ if (screen.width < 1400) {
     saberMaisBotao.setAttribute('href', '#cardsResp');
 } else {
     saberMaisBotao.setAttribute('href', '#cards');
-}
+}   
