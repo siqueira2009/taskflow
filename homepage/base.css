@@ -18,8 +18,7 @@ html {
 }
 
 body {
-    padding-bottom: 50px;
-    height: auto;
+    padding-bottom: 80px;    
 }
 
 body::after {
@@ -297,6 +296,8 @@ body.temaClaro .card {
     color: rgba(0, 0, 0, 0.8);
 }
 
+/* Cards responsivos */
+
 #cardsResp {
     margin: 0 auto;
     margin-top: 50px;
@@ -320,6 +321,10 @@ body.temaClaro .card {
     position: absolute;
     z-index: -10;
     pointer-events: none;
+}
+
+.notFocused h2, .notFocused p, .notFocused span {
+    display: none;
 }
 
 .focused {
