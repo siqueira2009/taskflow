@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    padding-bottom: 80px;    
+    padding-bottom: 50px;    
 }
 
 body::after {
@@ -111,10 +111,15 @@ header #temaFundo i {
     color: #272727; 
 }
 
+/* Main */
+
+main {
+    margin-top: 10dvh;
+}
+
 /* Hero Section */
 
 #heroSection {
-    margin-top: 10vh;
     width: 100%;
     text-align: center;
     user-select: none;
@@ -273,6 +278,10 @@ body.temaClaro .card {
     background-color: rgba(73, 80, 203, 0.15);
 }
 
+#sparkleIcon {
+    transition: fill 0.3s;
+}
+
 .card h2 {
     font-size:28px;
     font-weight: 500;
@@ -282,11 +291,16 @@ body.temaClaro .card {
     align-items: center;
 }
 
+.card h2 svg {
+    color: #fff;
+}
+
 .card p {
     text-align: justify;
     padding: 0px 30px;
     font-size: 18px;
 }
+
 
 body.temaEscuro .card {
     color: #fff;

@@ -1,22 +1,16 @@
 // Função que roda quando carrega a página
 
 document.addEventListener('DOMContentLoaded', () => {
-    let bodyChildren = document.querySelector('body').children; // Todos os filhos do body
+    let main = document.querySelector('main');
 
-    Array.from(bodyChildren).forEach((el, index) => { // Margin para animação de baixo
-        el.style.opacity = '0'
-        if (index == 1) {
-            el.style.marginTop = '0px'
-        } else {
-            el.style.marginTop = '1000px'
-        }
-        
-        setTimeout(() => {
-            el.style.transition = 'opacity 1s, margin-top 1s'
-            el.style.opacity = '1'
-            el.style.marginTop = ''
-        }, 400)
-    })
+    main.style.opacity = '0'
+    main.style.marginTop = '1000px'
+    
+    setTimeout(() => {
+        main.style.transition = 'opacity 1s, margin-top 1s'
+        main.style.opacity = '1'
+        main.style.marginTop = ''
+    }, 400)
 });
 
 
@@ -25,19 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
 let body = document.querySelector('body');
 let alterarTema = document.getElementById('temaFundo');
 let temaAtual = "escuro"
+let sparkle = document.getElementById('sparkleIcon');
 
 alterarTema.addEventListener('click', () => {
     if (temaAtual == "escuro") {
         body.classList.remove('temaEscuro');
         body.classList.add('temaClaro');
-
+        sparkle.setAttribute('fill', 'rgba(0, 0, 0, 0.8)');
+        
         temaAtual = "claro";
-
+        
         document.getElementById('temaEscuro').style.display = 'none'
         document.getElementById('temaClaro').style.display = 'block'
     } else {
         body.classList.remove('temaClaro');
         body.classList.add('temaEscuro');
+        sparkle.setAttribute('fill', '#fff');
 
         temaAtual = "escuro";
 
