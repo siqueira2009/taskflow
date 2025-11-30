@@ -1,0 +1,246 @@
+@media screen and (max-width: 260px) {
+    /* Remove todas os elementos */
+    header, #container, #menu, header #logo, #modalContainer #modal {
+        display: none;
+    }
+
+    /* Muda o estilo do body */
+    body {
+        width: 100dvw;
+        height: 100dvh;
+        display: block !important;
+    }
+
+    /* Mostra a tela de indisponibilidade */
+    #indisponivel {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 260px) and (max-width: 500px) {
+    /* Menu e Header */
+
+    #menu, header #logo {
+        width: 100%;
+    }
+
+    #menu.aberto + main {
+        width: 0px;
+    }
+
+    /* Listas */
+    
+    #listasContainer {
+        flex-direction: column;
+    }
+
+    #listasContainer section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #listasEsquerda {
+        padding-bottom: 0px !important;
+    }
+
+    .lista {
+        gap: 10px;
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .lista .listaInfo {
+        display: none;
+    }
+
+    .lista .direita {
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+
+    /* Modal de criar/editar listas */
+
+    #modalContainer #modal {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    #informacoesLista {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #informacoesInput {
+        width: 100%;
+    }
+
+    #informacoesInput input {
+        width: 100%;
+    }
+
+    #escolherIcone {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #botoesCriar {
+        justify-content: center;
+    }
+
+    /* Main (lugar onde aparece as listas) */ 
+
+    #nenhumaListaMain h1 {
+        font-size: "";
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    #nenhumaListaMain img {
+        max-width: 250px;
+        min-width: 250px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+    /* Menu e Header */
+
+    #menu, header #logo {
+        width: 100%;
+    }
+
+    #menu.aberto + main {
+        width: 0px;
+    }
+
+    /* Listas */
+    
+    #listasContainer {
+        flex-direction: column;
+    }
+
+    #listasContainer section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #listasEsquerda {
+        padding-bottom: 0px !important;
+    }
+
+    .lista .listaTitle {
+        font-size: 24px;
+    }
+
+    /* Modal de criar/editar listas */
+
+    #modalContainer #modal {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    #informacoesLista {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #informacoesInput {
+        width: 100%;
+    }
+
+    #informacoesInput input {
+        width: 100%;
+    }
+
+    #escolherIcone {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /* Main (lugar onde aparece as listas) */ 
+
+    #nenhumaListaMain h1 {
+        font-size:  28px;
+    }
+
+    #nenhumaListaMain img {
+        min-width: 300px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    /* Menu e Header */
+
+    #menu, header #logo {
+        width: 35%;
+    }
+
+    /* Listas */
+    
+    #listasContainer {
+        flex-direction: column;
+    }
+
+    #listasContainer section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #listasEsquerda {
+        padding-bottom: 0px !important;
+    }
+
+    .lista .listaTitle {
+        font-size: 24px;
+    }
+
+    /* Main (lugar onde aparece as listas) */
+
+    main {
+        width: 65%;
+    }
+
+    #nenhumaListaMain img {
+        min-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    /* Menu e Header */
+
+    #menu, header #logo {
+        width: 25%;
+        max-width: 262px;
+    }
+
+    #fecharMenu {
+        display: none !important;
+    }
+
+    /* Main (lugar onde aparece as listas) */
+
+    main {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    /* Menu e Header */
+
+    #menu, header #logo {
+        width: 17%;
+        max-width: 262px;
+    }
+
+    #fecharMenu {
+        display: none !important;
+    }
+
+    /* Main (lugar onde aparece as listas) */
+
+    main {
+        width: 83%;
+    }
+}

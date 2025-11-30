@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="shortcut icon" href="../imgs/SVGs/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../homepage/base.css">
+    <link rel="stylesheet" href="../homepage/responsive.css">
+</head>
+<body class="temaEscuro">
+
+    <!-- Tela de indisponibilidade (tela pequenas) -->
+    <section id="indisponivel">
+        <img draggable="false" src="../imgs/SVGs/Logo.svg" alt="Logo Taskflow">
+        <p>Site <span>indisponível</span> para seu dispositivo</p>
+    </section>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img draggable="false" src="../imgs/SVGs/Logo.svg " alt="Logo Taskflow">
+        <div id="temaFundo">
+            <i style="display: none;" class="fa-solid fa-moon tema" id="temaClaro"></i>
+            <svg style="display: flex;" class="tema" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" id="temaEscuro"><path fill="#ffff" d="M256 107q-62 0-105.5 43.5T107 256t43.5 105.5T256 405t105.5-43.5T405 256t-43.5-105.5T256 107zm0 256q-45 0-76-31t-31-76t31-76t76-31t76 31t31 76t-31 76t-76 31zm21-299V21q0-21-21-21t-21 21v43q0 21 21 21t21-21zM85 256q0-21-21-21H21q-21 0-21 21t21 21h43q21 0 21-21zm406-21h-43q-21 0-21 21t21 21h43q21 0 21-21t-21-21zM256 427q-21 0-21 21v43q0 21 21 21t21-21v-43q0-21-21-21zm164-305l22-22q14-14 0-30q-16-14-30 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6zm-313 6q7 0 15-6q14-16 0-30l-22-22q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6zm313 262q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6q7 0 15-6q14-16 0-30zm-328 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6l22-22q14-14 0-30q-16-14-30 0z"/></svg>
+        </div>
+    </header>
+    
+    <!-- Parte central do site -->
+    <main>
+        <!-- Hero Section -->
+        <section id="heroSection">
+            <!-- Título e slogan -->
+            <div id="titleContent">
+                <img draggable="false" id="titleImg" src="../imgs/SVGs/Logo.svg" alt="">
+                <h1 id="title">Task<span>Flow</span></h1>
+            </div>
+            <p id="slogan">Produtividade e facilidade máxima</p>
+            <!-- Botões (CTA) -->
+            <div id="heroBotoes">
+                <a id="comecar" href="../conta/index.html"><i class="fa-solid fa-user-plus"></i>Começar agora</a>
+                <a id="saberMais" href=""><i class="fa-solid fa-arrow-down"></i>Saber mais</a>
+            </div>
+        </section>
+    
+        <!-- Cards -->
+        <section id="cards">
+            <div class="card" id="pomodoro">
+                <div class="partesTop partes">
+                    <div class="parte1"></div>
+                    <div class="parte2"></div>
+                </div>
+                <div class="partesBottom partes">
+                    <div class="parte3"></div>
+                    <div class="parte4"></div>
+                </div>
+                <h2><i class="fa-solid fa-stopwatch-20"></i>Pomodoro</h2>
+                <p>A técnica Pomodoro revoluciona a produtividade no nosso site de tarefas: divida seu tempo em blocos focados, faça pausas estratégicas e conclua mais com menos estresse.</p>
+            </div>
+    
+            <div class="card" id="stats">
+                <div class="partesTop partes">
+                    <div class="parte1"></div>
+                    <div class="parte2"></div>
+                </div>
+                <div class="partesBottom partes">
+                    <div class="parte3"></div>
+                    <div class="parte4"></div>
+                </div>
+                <h2><i class="fa-solid fa-list"></i>Listas</h2>
+                <p>Organize suas atividades com listas personalizadas. Nosso site permite separar tarefas por categorias, facilitando o foco, a priorização e a gestão diária; sua rotina fica mais simples e muito eficaz.</p>
+            </div>
+    
+            <div class="card" id="ia">
+                <div class="partesTop partes">
+                    <div class="parte1"></div>
+                    <div class="parte2"></div>
+                </div>
+                <div class="partesBottom partes">
+                    <div class="parte3"></div>
+                    <div class="parte4"></div>
+                </div>
+                <h2><svg width="45" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path id="sparkleIcon" fill="#fff" d="M9.223 14.582a.5.5 0 0 1 .63.771l-2.5 2.5a.5.5 0 0 1-.708-.707l2.5-2.5zm-5.079.564a.5.5 0 0 1 .707.706l-1.498 1.5l-.079.064a.5.5 0 0 1-.628-.771zm10.528-5.842c.093-.4.652-.402.758-.022l.127.704a1.92 1.92 0 0 0 1.474 1.538l.662.147l.052.02c.334.124.328.573.04.713l-.068.024l-.711.128a1.92 1.92 0 0 0-1.533 1.473l-.148.666c-.093.4-.652.401-.759.022l-.126-.705a1.92 1.92 0 0 0-1.474-1.538l-.662-.147c-.414-.096-.402-.69.015-.768l.668-.119a1.92 1.92 0 0 0 1.537-1.474zm-6.528 1.842a.5.5 0 0 1 .707.707l-2.5 2.5a.5.5 0 1 1-.707-.706zM5.722 9.082a.501.501 0 0 1 .693.693l-.065.078l-3.498 3.499l-.078.065a.5.5 0 0 1-.629-.771l3.5-3.5zm4.202-6.615c.131-.623 1.02-.623 1.152 0l.2.998a2.88 2.88 0 0 0 2.259 2.26l.997.199c.604.127.623.966.056 1.137l-1.053.211a2.88 2.88 0 0 0-2.26 2.26l-.199.997l-.027.078c-.176.505-.85.511-1.07.084l-.037-.103l-.215-1.062A2.88 2.88 0 0 0 7.47 7.273l-1.002-.2c-.604-.127-.623-.966-.057-1.138l1.054-.21a2.88 2.88 0 0 0 2.26-2.26z"/></svg>IA</h2>
+                <p>Conte com nossa IA para organizar suas tarefas de forma inteligente. Ela entende suas prioridades, sugere horários ideais e otimiza sua rotina para você ser mais produtivo sem esforço.</p>
+            </div>
+        </section>
+    
+        <!-- Cards responsivos -->
+        <section id="cardsResp">
+            <div class="card focused cardResp" id="pomodoroResp">
+                <h2><i class="fa-solid fa-stopwatch-20"></i>Pomodoro</h2>
+                <p>A técnica Pomodoro revoluciona a produtividade no nosso site de tarefas: divida seu tempo em blocos focados, faça pausas estratégicas e conclua mais com menos estresse.</p>
+                <span style="text-align: center; font-size: 14px; font-style: italic;">Clique para passar →</span>
+            </div>
+            
+            <div class="card notFocused cardResp" id="statsResp">
+                <h2><i class="fa-solid fa-chart-line"></i>Estatísticas</h2>
+                <p>Acompanhe seu progresso com estatísticas inteligentes. Nosso site exibe gráficos de desempenho, tempo produtivo e metas concluídas para você visualizar sua evolução de forma clara e motivadora.</p>
+                <span style="text-align: center; font-size: 14px; font-style: italic;">Clique para passar →</span>
+            </div>
+            
+            <div class="card notFocused cardResp" id="iaResp">
+                <h2><i class="fa-solid fa-robot"></i>IA</h2>
+                <p>Conte com nossa IA para organizar suas tarefas de forma inteligente. Ela entende suas prioridades, sugere horários ideais e otimiza sua rotina para você ser mais produtivo sem esforço.</p>
+                <span style="text-align: center; font-size: 14px; font-style: italic;">Clique para passar →</span>
+            </div>
+        </section>
+
+        <!-- Acessibilidade -->
+        <div id="acessibilidade">
+            <i class="fa-solid fa-font fonteAce" id="fontePequena" style="font-size: 20px" onclick="fontePequena()"></i>
+            <i class="fa-solid fa-font fonteAce" id="fonteMedio" style="font-size: 30px" onclick="fonteMedia()"></i>
+            <i class="fa-solid fa-font fonteAce" id="fonteGrande" style="font-size: 36px" onclick="fonteGrande()"></i>
+        </div>
+    </main>
+
+    <!-- Bolinhas de progressão dos cards-->
+    <div id="dotsResp">
+        <div class="posAtual"></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script src="../homepage/script.js"></script>
+</body>
+</html>

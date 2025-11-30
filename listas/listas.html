@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suas Listas</title>
+    <link rel="shortcut icon" href="../imgs/SVGs/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="temaEscuro">
+    <!-- Tela de indisponibilidade (tela pequenas) -->
+    <div id="indisponivel">
+        <img draggable="false" src="../imgs/SVGs/Logo.svg" alt="Logo Taskflow">
+        <p>Site <span>indisponível</span> para seu dispositivo</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <i class="fa-solid fa-bars" id="fecharMenu"></i>
+            <h1>Task<span style="color: #4950CB">Flow</span></h1>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <div id="container">
+        <!-- Menu lateral -->
+        <aside id="menu" class="aberto">
+            <div id="opcoes">
+                <!-- Filtros (favoritos, importantes e todos) -->
+                <div id="filtros">
+                    <button class="filtroBotao botao" onclick="selecionarFiltro(0)"><i class="fa-solid fa-list-check"></i>Todas as listas</button>
+                    <button class="filtroBotao botao" onclick="selecionarFiltro(1)"><i class="fa-solid fa-star"></i>Favoritadas</button>
+                    <button class="filtroBotao botao" onclick="selecionarFiltro(2)"><i class="fa-solid fa-circle-exclamation"></i>Importantes</button>
+                </div>
+        
+                <!-- Listas já criadas -->
+                <p id="listasTitle">Suas listas <i class="fa-solid fa-angle-down" id="fecharListas"></i></p>
+                <ul id="listas">
+                    <li id="nenhumaLista" style="display: none;"><i class="fa-solid fa-clock"></i>Nenhuma lista...</li>
+                </ul>
+        
+                <div id="adicionar">
+                    <button class="adicionarBotao botao" id="adicionarBotao"><i class="fa-solid fa-add"></i>Adicionar lista</button>
+                </div>
+            </div>
+    
+            <!-- Switch de alterar tema -->
+            <div id="tema">
+                <i class="fa-solid fa-moon temaIconLua temaIcon"></i>
+                
+                <input type="checkbox" id="switch">
+                <label for="switch" class="toggle"></label>
+                
+                <svg class="temaIconSol" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" id="temaEscuro"><path class="temaIcon" fill="#ffff" d="M256 107q-62 0-105.5 43.5T107 256t43.5 105.5T256 405t105.5-43.5T405 256t-43.5-105.5T256 107zm0 256q-45 0-76-31t-31-76t31-76t76-31t76 31t31 76t-31 76t-76 31zm21-299V21q0-21-21-21t-21 21v43q0 21 21 21t21-21zM85 256q0-21-21-21H21q-21 0-21 21t21 21h43q21 0 21-21zm406-21h-43q-21 0-21 21t21 21h43q21 0 21-21t-21-21zM256 427q-21 0-21 21v43q0 21 21 21t21-21v-43q0-21-21-21zm164-305l22-22q14-14 0-30q-16-14-30 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6zm-313 6q7 0 15-6q14-16 0-30l-22-22q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6zm313 262q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6q7 0 15-6q14-16 0-30zm-328 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6l22-22q14-14 0-30q-16-14-30 0z"/></svg>
+            </div>
+        </aside>
+    
+        <!-- Conteúdo principal -->
+        <main>
+            <h1 id="listasTitleMain" class="title">Todas as <span>listas</span></h1>
+
+            <!-- Lugar onde terá os cards das listas -->
+            <div id="listasContainer">
+                <section id="listasEsquerda">
+                </section>
+    
+                <section id="listasDireita">
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal de criar/editar lista -->
+    <section id="modalContainer" class="">
+        <form id="modal">
+            <h1></h1>
+
+            <!-- Informações escolhidas (nome + ícone) -->
+            <div id="informacoesLista">
+                <i class="fa-solid fa-graduation-cap" id="iconeEscolhido"></i>
+                <div id="informacoesInput">
+                    <input type="text" required autocomplete="off" id="inputNome">
+                    <label class="label" id="inputNomeLabel"></label>
+                </div>
+            </div>
+
+            <!-- Opções de ícones -->
+            <div id="escolherIcone">
+                <i style="width: 5%;" id="voltarIcone" class="fa-solid fa-angle-left"></i>
+
+                <div id="opcoesIcones">
+                    <i class="fa-solid fa-graduation-cap iconeSelecionado"></i>
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-suitcase"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <i class="fa-solid fa-bullseye"></i>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+
+                <i style="width: 5%;" id="avancarIcone" class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <!-- Criar ou cancelar -->
+            <div id="botoesCriar">
+                <button style="color: rgb(255, 40, 40)" id="cancelarCriacao">Cancelar</button>
+                <button id="confirmarCriacao" disabled></button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Acessibilidade -->
+    <div id="acessibilidade">
+        <i class="fa-solid fa-font fonteAce" id="fontePequena" style="font-size: 20px" onclick="fontePequena()"></i>
+        <i class="fa-solid fa-font fonteAce" id="fonteMedio" style="font-size: 30px" onclick="fonteMedia()"></i>
+        <i class="fa-solid fa-font fonteAce" id="fonteGrande" style="font-size: 36px" onclick="fonteGrande()"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+@media screen and (max-width: 260px) {
+    /* Remove todas os elementos */
+    header, #heroSection, #cardsResp, #cards, #dotsResp {
+        display: none;
+    }
+
+    /* Muda o estilo do body */
+    body {
+        width: 100dvw;
+        height: 100dvh;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 400px) {
+    /* Tira tela de indisponibilidade */
+    #indisponivel {
+        display: none;
+    }
+
+    /* Header */
+
+    header img {
+        width: 50px;
+    }
+
+    /* Hero Section */
+
+    #titleContent {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #titleContent #title {
+        display: flex;
+        line-height: 70px;
+        flex-direction: column;
+    }
+
+    #heroSection #slogan {
+        font-size: 20px;
+    }
+
+    #heroBotoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Cards */
+
+    #cards {
+        display: none;
+    }
+
+    #cardsResp {
+        display: flex;
+    }
+
+    .card {
+        padding: 20px 30px;
+    }
+
+    .card h2 {
+        font-size: 26px;
+    }
+    
+    .card p {
+        font-size: 16px;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    /* Tira tela de indisponibilidade */
+    #indisponivel {
+        display: none;
+    }
+
+    /* Header */
+
+    header img {
+        width: 50px;
+    }
+
+    /* Hero Section */
+
+    #titleContent {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #titleContent #title {
+        display: flex;
+        line-height: 70px;
+        flex-direction: row;
+    }
+
+    #heroBotoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #heroSection #slogan {
+        font-size: 20px;
+    }
+
+    /* Cards */
+
+    #cards {
+        display: none;
+    }
+
+    #cardsResp {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    /* Tira tela de indisponibilidade */
+    #indisponivel {
+        display: none;
+    }
+
+    /* Cards */
+
+    #cards {
+        display: none;
+    }
+
+    #cardsResp {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+    /* Tira tela de indisponibilidade */
+    #indisponivel {
+        display: none;
+    }
+
+    /* Cards */
+
+    #cards {
+        display: none;
+    }
+
+    #cardsResp {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    /* Tira tela de indisponibilidade */
+    #indisponivel {
+        display: none;
+    }
+
+    /* Cards */
+    
+    #dotsResp {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+O projeto é composto por 4 páginas HTML separadas. Por isso, escolhemos separar as páginas em pastas.
+Cada pasta tem o nome da página, e, dentro dela, há o arquivo HTML, CSS e JavaScript.
+As imagens estão em "img" e os mp3 em "mp3".
+A pasta "fontawesome" é a pasta da biblioteca que utilizamos para exibir ícones.
+
+Alguns links úteis: 
+1. Repositório do GitHub: https://github.com/siqueira2009/taskflow
+2. Site na Web: https://siqueira2009.github.io/taskflow/
+3. Site do Font Awesome: https://fontawesome.com/

@@ -1,0 +1,413 @@
+@media screen and (max-width: 260px) {
+    /* Remove todas os elementos */
+    header, #container, #menu, header #logo, #modalContainer #modal {
+        display: none;
+    }
+
+    /* Muda o estilo do body */
+    body {
+        width: 100dvw;
+        height: 100dvh;
+        display: block !important;
+    }
+
+    /* Mostra a tela de indisponibilidade */
+    #indisponivel {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 260px) and (max-width: 350px) {
+    /* Main (conteúdo principal) */
+
+    #container {
+        height: auto;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 70px;
+        padding: 20px 30px;
+    }
+
+    #esquerda, #direita {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Esquerda (lista de tarefas) */
+
+    #esquerda {
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .tarefaTitleContainer i{
+        display: none;
+    }
+
+    .deletarResponsiva {
+        display: block;
+        font-size: 18px;
+    }
+
+    #headerLista {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    #adicionarTarefas {
+        font-size: 14px;
+    }
+
+    #nenhumaTarefa h2 {
+        font-size: 18px;
+    }
+
+    #nenhumaTarefa h4 {
+        font-size: 14px;
+    }
+
+    #nenhumaTarefa img {
+        max-width: 300px;
+    }
+
+    /* Direita (ferramentas)  */
+
+    #direita {
+        padding: 0px;
+    }
+
+    #pomodoro, #taskBot {
+        width: 100%;
+    }
+
+    #opcoesDireita {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Pomodoro */
+
+    #pomodoro {
+        max-width: 500px;
+    }
+
+    #pomodoro #tempoRestante {
+        font-size: 50px;
+    }
+
+    #pomodoro #estadoAtual {
+        font-size: 30px;
+    }
+
+    #botoesControles i {
+        width: 20%;
+    }
+
+    /* TaskBot */
+
+    #taskBot {
+        font-size: 14px !important;
+        padding: 20px 10px;
+    }
+
+    #taskBot #opcoesPerguntas button {
+        font-size: 14px !important;
+    }
+
+    #taskBot i {
+        font-size: 16px;
+    }
+
+    /* Modal de criar tarefa */
+
+    #modal {
+        width: 90% !important;
+    }
+
+    /* Acessibilidade */
+
+    #acessibilidade {
+        bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    /* Main (conteúdo principal) */
+    #container {
+        height: auto;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 70px;
+        padding: 20px 30px;
+    }
+
+    /* Esquerda (lista de tarefas) */
+
+    #esquerda {
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .tarefaTitleContainer i{
+        display: none;
+    }
+
+    .deletarResponsiva {
+        display: block;
+        font-size: 18px;
+    }
+
+    #headerLista {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    #adicionarTarefas {
+        font-size: 14px;
+    }
+
+    #nenhumaTarefa h2 {
+        font-size: 18px;
+    }
+
+    #nenhumaTarefa h4 {
+        font-size: 14px;
+    }
+
+    #nenhumaTarefa img {
+        max-width: 300px;
+    }
+
+    #esquerda, #direita {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Direita (ferrementas) */
+
+    #pomodoro, #taskBot {
+        width: 100%;
+    }
+
+    #direita {
+        padding: 0px;
+    }
+
+    #opcoesDireita {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Pomodoro */
+
+    #pomodoro {
+        max-width: 500px;
+    }
+
+    #pomodoro #tempoRestante {
+        font-size: 60px;
+    }
+
+    #pomodoro #estadoAtual {
+        font-size: 40px;
+    }
+
+    #botoesControles i {
+        width: 20%;
+    }
+
+    /* TaskBot */
+
+    #taskBot {
+        font-size: 14px !important;
+        padding: 20px 10px;
+    }
+
+    #taskBot #opcoesPerguntas button {
+        font-size: 14px !important;
+    }
+
+    #taskBot i {
+        font-size: 16px;
+    }
+
+    /* Modal de criar tarefa */
+
+    #modal {
+        width: 90% !important;
+    }
+
+    /* Acessibilidade */
+
+    #acessibilidade {
+        bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    /* Main (conteúdo principal) */
+
+    #container {
+        height: auto;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 70px;
+        padding: 20px 30px;
+    }
+
+    #pomodoro, #taskBot {
+        width: 100%;
+    }
+
+    /* Esquerda (lista de tarefas) */
+
+    #esquerda {
+        padding: 20px;
+        overflow-y: auto;
+    }
+    
+    .tarefaTitleContainer i {
+        display: block;
+    }
+
+    .deletarResponsiva {
+        display: none;
+        font-size: 18px;
+    }
+
+    #adicionarTarefas {
+        font-size: 14px;
+    }
+
+    #nenhumaTarefa img {
+        max-width: 450px;
+    }
+
+    #esquerda, #direita {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Direita (ferramentas) */
+
+    #direita {
+        padding: 0px;
+    }
+
+    #opcoesDireita {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Pomodoro */
+
+    #pomodoro {
+        max-width: 500px;
+    }
+
+    #pomodoro #tempoRestante {
+        font-size: 60px;
+    }
+
+    #pomodoro #estadoAtual {
+        font-size: 40px;
+    }
+
+    #botoesControles i {
+        width: 20%;
+    }
+
+    /* TaskBot */
+
+    #taskBot {
+        font-size: 14px !important;
+        padding: 20px 10px;
+    }
+
+    #taskBot #opcoesPerguntas button {
+        font-size: 14px !important;
+    }
+
+    #taskBot i {
+        font-size: 16px;
+    }
+
+    /* Modal de criar tarefas */
+
+    #modal {
+        width: 90% !important;
+    }
+
+    /* Acessibilidade */
+
+    #acessibilidade {
+        bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    /* Main (conteúdo principal) */
+
+    #container {
+        height: auto;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 70px;
+    }
+
+    #esquerda, #direita {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Esquerda (lista de tarefas) */
+
+    #nenhumaTarefa img {
+        max-width: 400px;
+    }
+
+    /* Direita (ferramentas) */
+
+    #pomodoro, #taskBot {
+        width: 100%;
+    }
+
+    #direita {
+        padding: 0px;
+    }
+
+    /* Pomodoro */
+
+    #pomodoro {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    /* Main (conteúdo principal) */
+
+    #container {
+        padding: 20px 50px;
+    }
+
+    /* Direita (ferramentas) */
+
+    #pomodoro, #taskBot {
+        width: 65%;
+    }
+}
