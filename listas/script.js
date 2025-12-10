@@ -205,7 +205,8 @@ function criarItemMain(lista, index) {
 
     // Cria um article
     let article = document.createElement('article');
-    article.id = lista.nome;
+    let nomeSemAcento = lista.nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    article.id = nomeSemAcento;
     article.classList.add('lista');
 
     // Se for favoritada/importante, adiciona a classe disto
