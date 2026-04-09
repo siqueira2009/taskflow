@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="../imgs/SVGs/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="temaEscuro">
+
+        <main id="box-login">
+
+            <header>
+
+                <img draggable="false" src="../imgs/SVGs/TaskFlow.png" alt="LogoTaskflow" width="60px" height="30px">
+                <button id="color-mode">
+
+                    <svg style="display: flex;" class="tema" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" id="temaEscuro"><path fill="#ffff" d="M256 107q-62 0-105.5 43.5T107 256t43.5 105.5T256 405t105.5-43.5T405 256t-43.5-105.5T256 107zm0 256q-45 0-76-31t-31-76t31-76t76-31t76 31t31 76t-31 76t-76 31zm21-299V21q0-21-21-21t-21 21v43q0 21 21 21t21-21zM85 256q0-21-21-21H21q-21 0-21 21t21 21h43q21 0 21-21zm406-21h-43q-21 0-21 21t21 21h43q21 0 21-21t-21-21zM256 427q-21 0-21 21v43q0 21 21 21t21-21v-43q0-21-21-21zm164-305l22-22q14-14 0-30q-16-14-30 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6zm-313 6q7 0 15-6q14-16 0-30l-22-22q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6zm313 262q-14-14-30 0q-14 16 0 30l22 22q6 6 15 6q7 0 15-6q14-16 0-30zm-328 0l-22 22q-14 14 0 30q8 6 15 6q9 0 15-6l22-22q14-14 0-30q-16-14-30 0z"/></svg>
+
+                    <i class="fa-solid fa-moon" id="temaClaro" style="display: none; color: black; font-size: 25px; width: 30px; height: 30px; justify-content: center; align-items: center;"></i>
+
+                </button>
+
+
+
+            </header>
+           
+            <div class="conteudo">
+
+                <aside>
+
+                    <img draggable="false" src="../imgs/SVGs/undraw_data-at-work_3tbf.svg"
+                         alt="Ilustração" width="350px" height="250px">
+
+                </aside>
+
+                <div id="separador"></div>
+
+                <section id="login-area">
+
+                    <h1>Login</h1>
+
+                    <div class="input">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" style="width: 350px; height: 30px;">
+
+                    </div>
+
+                    <div class="input">
+
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="********" style="width: 350px; height: 30px;">
+
+                    </div>
+
+                    <div class="input-check">       
+
+                        <div id="check-left">
+
+                            <input type="checkbox" id="lembra">
+                            <label for="lembra" style="width: 20px;">Lembrar Senha</label>
+
+                        </div>
+
+                        <a href="#">Esqueceu sua Senha?</a>
+
+                    </div>
+
+                    <div class="input-login">
+                        <button type="submit" id="botao-login">Login</button>
+
+                        <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                    
+                    </div>
+
+                    <h2>Logar com</h2>
+
+                    <div id="social-login">
+
+                        <button id="google-login"><img draggable="false" src="../imgs/SVGs/google.png" alt="google" width="50px" height="50px"></button>
+                        <button id="apple-login"><img draggable="false" src="../imgs/SVGs/apple.png" alt="google" width="50px" height="50px"></button>
+                        <button id="linkedin-login"><img draggable="false" src="../imgs/SVGs/linkedin.webp" alt="google" width="50px" height="50px"></button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+</body>
+
+<script src="login.js"></script>
+</html>
